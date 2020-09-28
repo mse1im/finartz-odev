@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    
+    <title>JS IMDb Api</title>
+
+    <script>
+        $(document).ready(function(){
+            App.init();
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Search Bar -->
+        <div class="row pt-4 pb-4">
+            <div class="col-md-10">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="la la-search"></i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control searchinput" placeholder="Searching word" onkeyup="App.SearchAWord(this)" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <button type="button" onclick="App.SendSearchQuery()" disabled class="btn btn-outline-info searchbutton disabled">
+                    Search
+                    <i class="la la-search"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Search Bar -->
+
+        <!-- Search History -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <label for="">
+                    Search History
+                </label>
+            </div>
+            <div class="col-md-12">
+                <div class="SearchHistory">
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Search History -->
+
+
+        <!-- Search Result -->
+
+        <div class="row carded">
+            <div class="col-md-12">
+                <label for="">
+                    Search Result(s)
+                </label>
+            </div>
+            <div class="col-md-12">
+                <div class="SearchResult">
+                    <label>Search any moviev or series.</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Result -->
+
+
+
+        <!-- Favorites  -->
+
+        <div class="row carded">
+            <div class="col-md-12">
+                <label for="">
+                    Favorite(s)
+                </label>
+            </div>
+            <div class="col-md-12">
+                <div class="Favorites">
+                    <label>Add favorite any movie or series.</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Favorites -->
+
+    </div>
+
+
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
